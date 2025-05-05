@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Multicsvimport
+Bundle-SymbolicName: org.idempiere.multicsvimport;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: org.idempiere.multicsvimport.Activator
+Import-Package: org.osgi.framework,
+ org.compiere.util
+Require-Bundle: 
+ org.adempiere.base,
+ org.adempiere.ui.zk,
+ zk,
+ zul
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Automatic-Module-Name: org.idempiere.multicsvimport
+Bundle-ActivationPolicy: lazy
+Export-Package: org.idempiere.multicsvimport

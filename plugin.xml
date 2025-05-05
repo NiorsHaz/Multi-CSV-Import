@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         point="org.adempiere.ui.zk.zkpanel">
+      <panel
+            id="org.idempiere.multicsvimport.panel"
+            class="org.idempiere.multicsvimport.WMultiCSVImport"
+            name="Multi CSV Import Panel"/>
+   </extension>
+
+   <extension
+         point="org.adempiere.model.ad_process">
+      <process
+            id="org.idempiere.multicsvimport.process"
+            class="org.idempiere.multicsvimport.WMultiCSVImport"
+            isReport="false"
+            name="Multi CSV Import Process"
+            accesslevel="3">
+      </process>
+   </extension>
+
+</plugin>
